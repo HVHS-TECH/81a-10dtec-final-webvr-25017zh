@@ -3,18 +3,50 @@
   <head>
 
 <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+<script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@2.1.1/dist/aframe-extras.min.js"></script>
-    
+
   </head>
     <body>
     <a-scene>
-      <a-sky color="lightblue"></a-sky>
+      <!-- thanks to Freepik and rawpixel for the skybox yo-->
+      <a-sky src="outer-space-background.jpg"></a-sky>
       
-       <!-- Put this inside the <a-scene> -->
       <a-entity 
-      ply-model="src:dog.ply"
-      position="0 1 -2"
-      rotation="-90 0 90"
+      ply-model="src:cloud.ply"
+      position="0 0 -2"
+      rotation="0 0 0"
+      ></a-entity>
+      <a-entity 
+      ply-model="src:Black Hole Final Assesment V2 Pt1.ply"
+      position="-130 -84.34 -76.674"
+      rotation="-90 0 0"
+      scale="10 10 10"
+      ></a-entity>
+      <a-entity 
+      ply-model="src:Black Hole Final Assesment V2 Pt3.ply"
+      position="121.79 75.078 -76.328"
+      rotation="90 -180 0"
+      scale="10 10 10"
+      ></a-entity>
+      <a-entity
+      ply-model="src:medium nebula cloud 1.ply"
+      position="0 0 0"
+      rotation="0 0 0"
+      ></a-entity>
+      <a-entity
+      ply-model="src:nebula ring pt2.ply"
+      position="-18.273 247.906 -89.473"
+      rotation="-90 0 0"
+      scale="50 50 50"
+      opacity="0.75"
+      ></a-entity>
+      <a-entity
+      ply-model="src:nebula ring pt3.ply"
+      position="-335.867 133.047 224.594"
+      rotation="90 180 0"
+      scale="-50 50 50"
+      opacity="0.75"
       ></a-entity>
                  
     </a-scene>
